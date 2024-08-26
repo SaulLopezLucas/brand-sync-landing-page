@@ -7,23 +7,17 @@ export const HomepageHero = () => (
   <Hero>
     <Button
       className="translate-y-[-1rem] animate-fade-in opacity-0"
-      href="/"
-      variant="secondary"
-      size="small"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSe-yZeW2UYcOsPaXZH46RgTRm1C7AEKyn7KyNSCTj3EB1L-iA/viewform?usp=sf_link"
+      size="medium"
     >
-      <span>Interested? Join the Waitlist Here!</span>{" "}
-      <Highlight>→</Highlight>
+      <span>Interested? Join the Waitlist Here!</span> <Highlight>→</Highlight>
     </Button>
 
     <HeroTitle className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-      BrandSync: The Smart Way to Connect
-      <br className="hidden md:block" /> Influencers and Brands
+      BrandSync
     </HeroTitle>
-
-    <HeroSubtitle className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-      Discover the new standard for influencer marketing.
-      <br className="hidden md:block" /> Streamline your connections and grow
-      your brand.
+    <HeroSubtitle className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+      The Future of Influencer Marketing, Powered by AI.
     </HeroSubtitle>
 
     <Button
@@ -37,7 +31,6 @@ export const HomepageHero = () => (
         <ChevronIcon />
       </Highlight>
     </Button>
-
     <HeroImage />
   </Hero>
 );

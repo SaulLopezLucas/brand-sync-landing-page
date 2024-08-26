@@ -2,10 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Button } from "./button";
 import { Container } from "./container";
 import { HamburgerIcon } from "./icons/hamburger";
-import { Logo } from "./icons/logo";
 import classNames from "classnames";
 
 export const Header = () => {
@@ -32,7 +30,11 @@ export const Header = () => {
     <header className="fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
         <Link className="flex items-center text-md" href="/">
-          <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> BrandSync
+          <img
+            src="./logos/brandsynclogo.png"
+            alt="BrandSync"
+            className="h-8 w-auto"
+          />
         </Link>
 
         <div
@@ -63,7 +65,9 @@ export const Header = () => {
                 <Link href="#">Documentation</Link>
               </li>
               <li>
-                <Link href="#">GitHub</Link>
+                <Link href="https://github.com/SaulLopezLucas/brand-sync-landing-page">
+                  GitHub
+                </Link>
               </li>
               <li>
                 <Link href="#">Pricing</Link>
@@ -74,14 +78,6 @@ export const Header = () => {
             </ul>
           </nav>
         </div>
-
-        <div className="ml-auto flex h-full items-center">
-          <Link className="mr-6 text-sm" href="#">
-            Log in
-          </Link>
-          <Button href="#">Sign up</Button>
-        </div>
-
         <button
           className="ml-6 md:hidden"
           onClick={() => setHamburgerMenuIsOpen((open) => !open)}
