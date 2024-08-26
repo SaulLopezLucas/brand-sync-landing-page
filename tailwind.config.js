@@ -21,13 +21,15 @@ module.exports = {
     },
     colors: {
       transparent: "transparent",
-      white: "#fff",
+      white: "#ffffff",
       "off-white": "#f7f8f8",
       "transparent-white": "rgba(255, 255, 255, 0.08)",
-      background: "#000212",
+      background: "linear-gradient(120.76deg, #F1755F 9.55%, #F15F9A 102.45%)",
       grey: "#858699",
-      "grey-dark": "#222326",
-      "primary-text": "#b4bcd0",
+      "grey-dark": "#343a40",
+      "primary-text": "black", 
+      "secondary-text": "#f7a1b1", 
+      accent: "#F15F9A", 
     },
     spacing: {
       0: "0",
@@ -51,22 +53,22 @@ module.exports = {
     },
     backgroundImage: {
       "primary-gradient":
-        "linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%)",
+        "linear-gradient(92.88deg, #F1755F 9.16%, #F15F9A 43.89%, #F1755F 64.72%)",
       "page-gradient":
-        "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), transparent)",
+        "radial-gradient(ellipse 80% 50% at 50% -20%, rgba(241, 95, 154, 0.3), transparent)",
       "hero-gradient":
-        "radial-gradient(ellipse 50% 80% at 20% 40%,rgba(93,52,221,0.1),transparent), radial-gradient(ellipse 50% 80% at 80% 50%,rgba(120,119,198,0.15),transparent)",
+        "radial-gradient(ellipse 50% 80% at 20% 40%, rgba(241, 95, 154, 0.1), transparent), radial-gradient(ellipse 50% 80% at 80% 50%, rgba(241, 117, 95, 0.15), transparent)",
       "hero-glow":
-        "conic-gradient(from 230.29deg at 51.63% 52.16%, rgb(36, 0, 255) 0deg, rgb(0, 135, 255) 67.5deg, rgb(108, 39, 157) 198.75deg, rgb(24, 38, 163) 251.25deg, rgb(54, 103, 196) 301.88deg, rgb(105, 30, 255) 360deg)",
+        "conic-gradient(from 230.29deg at 51.63% 52.16%, rgba(241, 95, 154, 0.6) 0deg, rgba(255, 135, 155, 0.5) 67.5deg, rgba(241, 117, 95, 0.7) 198.75deg)",
       "glow-lines":
-        "linear-gradient(var(--direction),#9d9bf2 0.43%,#7877c6 14.11%,rgba(120,119,198,0) 62.95%)",
+        "linear-gradient(var(--direction), #F1755F 0.43%, #F15F9A 14.11%, rgba(241, 95, 154, 0) 62.95%)",
       "radial-faded":
-        "radial-gradient(circle at bottom center,var(--color),transparent 70%)",
+        "radial-gradient(circle at bottom center, var(--color), transparent 70%)",
       "glass-gradient":
-        "linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%)",
+        "linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.15) 100%)",
     },
     boxShadow: {
-      primary: "rgb(80 63 205 / 50%) 0px 1px 40px",
+      primary: "rgba(241, 95, 154, 0.5) 0px 1px 40px",
     },
     transitionDelay: {
       0: "0ms",
@@ -99,7 +101,7 @@ module.exports = {
         "0%": { "stroke-dashoffset": 1 },
         "50%": { "stroke-dashoffset": 0 },
         "99%": { "stroke-dashoffset": 0 },
-        "100%": { visiblity: "hidden" },
+        "100%": { visibility: "hidden" },
       },
       "glow-line-horizontal": {
         "0%": { opacity: 0, transform: "translateX(0)" },

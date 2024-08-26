@@ -8,7 +8,7 @@
   }
 
   html {
-    @apply bg-background font-sans text-off-white;
+    @apply bg-background font-sans text-primary-text;
     font-size: 62.5%;
   }
 
@@ -31,7 +31,7 @@
   }
 
   .text-gradient {
-    background: linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.38));
+    background: linear-gradient(to right bottom, rgba(241, 117, 95, 1) 30%, rgba(255, 255, 255, 0.38));
     background-clip: text;
     color: transparent;
   }

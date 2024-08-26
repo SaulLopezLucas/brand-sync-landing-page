@@ -32,7 +32,7 @@ export const Header = () => {
     <header className="fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
         <Link className="flex items-center text-md" href="/">
-          <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> Linear
+          <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> BrandSync
         </Link>
 
         <div
@@ -57,25 +57,19 @@ export const Header = () => {
               )}
             >
               <li>
-                <Link href="#">Features</Link>
+                <Link href="#">About</Link>
               </li>
               <li>
-                <Link href="#">Method</Link>
+                <Link href="#">Documentation</Link>
               </li>
-              <li className="md:hidden lg:block">
-                <Link href="#">Customers</Link>
-              </li>
-              <li className="md:hidden lg:block">
-                <Link href="#">Changelog</Link>
-              </li>
-              <li className="md:hidden lg:block">
-                <Link href="#">Integrations</Link>
+              <li>
+                <Link href="#">GitHub</Link>
               </li>
               <li>
                 <Link href="#">Pricing</Link>
               </li>
               <li>
-                <Link href="#">Company</Link>
+                <Link href="#">FAQ</Link>
               </li>
             </ul>
           </nav>
