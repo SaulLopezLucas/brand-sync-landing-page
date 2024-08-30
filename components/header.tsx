@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image"; 
 import { useEffect, useState } from "react";
 import { Container } from "./container";
 import { HamburgerIcon } from "./icons/hamburger";
 import classNames from "classnames";
+import BrandSyncLogo from "./logos/brandsynclogo.png";
 
 export const Header = () => {
   const [hamburgerMenuIsOpen, setHamburgerMenuIsOpen] = useState(false);
@@ -30,10 +32,10 @@ export const Header = () => {
     <header className="fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
         <Link className="flex items-center text-md" href="/">
-          <img
-            src="./logos/brandsynclogo.png"
-            alt="BrandSync"
-            className="h-8 w-auto"
+          <Image
+            src={BrandSyncLogo}
+            alt="BrandSync Logo"
+            width={75}
           />
         </Link>
 
